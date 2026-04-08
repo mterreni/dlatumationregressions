@@ -1,0 +1,6 @@
+config {
+    type: "assertion",
+    tags: ["assert_customer_details"]
+}
+
+SELECT * FROM `dlautomation-491608.Regtestbronze.customer_details` WHERE id IS NULL OR name IS NULL
