@@ -1,0 +1,14 @@
+config {
+    type: "incremental",
+    schema: "Regtestsilver",
+    name: "customer_details",
+    uniqueKey: ["id"],
+    tags: ["bronze_to_silver_customer_details"]
+}
+SELECT
+  id,
+  name,
+  runid
+FROM
+  `dlautomation-491608.Regtestbronze.customer_details`
+  where  runid = (select max(runid) from `dlautomation-491608.Regtestbronze.customer_details`)
