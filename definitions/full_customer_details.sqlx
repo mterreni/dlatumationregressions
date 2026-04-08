@@ -1,0 +1,15 @@
+config {
+    type: "table",
+    schema: "Regtestgold",
+    name: "full_customer_details",
+    tags: ["silver_to_gold_full_customer_details"]
+}
+
+SELECT
+    cd.id,
+    cd.name,
+    cb.birthdate
+FROM
+    `dlautomation-491608.Regtestbronze.customer_details` cd
+JOIN
+    `dlautomation-491608.Regtestbronze.customer_birthdates` cb ON cd.id = cb.id
