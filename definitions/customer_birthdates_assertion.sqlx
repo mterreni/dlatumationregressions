@@ -1,0 +1,6 @@
+config {
+    type: "assertion",
+    tags: ["assert_customer_birthdates"]
+}
+
+SELECT * FROM `dlautomation-491608.Regtestbronze.customer_birthdates` WHERE id IS NULL OR birthdate IS NULL
