@@ -7,7 +7,7 @@ config {
 }
 SELECT
   id,
-  name,
+  birthdate,
   runid
 FROM
   `dlautomation-491608.Regtestbronze.customer_birthdates`
