@@ -1,0 +1,4 @@
+defaultProject: dlautomation-491608
+defaultDataset: dataform
+defaultAssertionDataset: Regtestassert
+dataformCoreVersion: 3.0.42
